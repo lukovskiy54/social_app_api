@@ -5,7 +5,7 @@ from django.contrib.auth.hashers import make_password
 class GetUserNetSerializer(serializers.ModelSerializer):
     class Meta:
         model=UserNet
-        exclude = ("password","last_login","is_staff","is_superuser","is_active","email","groups","user_permissions")
+        exclude = ("password","last_login","is_staff","is_superuser","is_active","groups","user_permissions")
         
    
     
